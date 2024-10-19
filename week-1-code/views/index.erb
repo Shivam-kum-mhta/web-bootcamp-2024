@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Today's Top Headlines</h1>
+
+        <!-- Search Form -->
+        <form action="/" method="get">
+            <input type="text" name="query" placeholder="Search for news..." value="<%= query %>">
+            <input type="submit" value="Search">
+        </form>
+
+        <!-- News Section -->
+        <div class="news">
+            <% if articles.empty? %>
+                <p>No articles found. Please try a different search term.</p>
+            <% else %>
+                <% articles.each do |article| %>
+                    <div class="article">
+                        <h2><a href="<%= article['url'] %>"><%= article['title'] %></a></h2>
+                        <p><%= article['description'] %></p>
+                        <p><small>Published at: <%= article['publishedAt'] %></small></p>
+                    </div>
+                <% end %>
+            <% end %>
+        </div>
+    </div>
+</body>
+</html>
