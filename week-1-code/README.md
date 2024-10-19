@@ -13,43 +13,37 @@ This is a Ruby application using the Sinatra framework to fetch and display the 
 
 ## Installation
 
-1. **Install Ruby**: Ensure Ruby is installed:
-   ```bash
-   ruby -v
-   ```
+      1. **Install Ruby**: Ensure Ruby is installed:
+         ```bash
+         ruby -v
+      ```
 
-2. **Install Bundler**: Install Bundler if needed:
-   ```bash
-   gem install bundler sinatra
-   ```
-
-3. **Clone the Repository**: Clone the project to your local machine:
-   ```bash
-   git clone https://github.com/Shivam-kum-mhta/IRIS-week-1.git
-   cd IRIS-week-1
-   ```
-
-4. **Install Dependencies**: Install required gems:
-   ```bash
-   bundle install
-   ```
+      2. **Clone the Repository**: Clone the project to your local machine:
+          ```bash
+         git clone https://github.com/Shivam-kum-mhta/IRIS-week-1.git
+         cd week-1-code
+         ```
+      3. **Install Dependencies**:
+         ```bash
+         gem install bundler sinatra
+         ```
 
 ## Configuration
 
-1. **Get API Key**: 
-   - Sign up at [NewsAPI](https://newsapi.org/) and get an API key.
+      1. **Get API Key**: 
+         - Sign up at [NewsAPI](https://newsapi.org/) and get an API key.
 
-2. **Update API Key**: 
-   - Open `app.rb` and update the API key:
-   ```ruby
-   api_key = 'YOUR_NEWSAPI_KEY'
-   ```
+      2. **Update API Key**: 
+         - Create `.env` file and  update the API key:
+         ```ruby
+         NEWSAPI_KEY= 'YOUR_NEWSAPI_KEY'
+         ```
 
 ## Running the Application
 
-1. **Start the Server**:
-   ```bash
-   ruby app.rb
-   ```
+      1. **Start the Server**:
+       ```bash
+       ruby app.rb
+       ```
 
-2. **Open in Browser**: Go to `http://localhost:4567` to view the application.
+      2. **Open in Browser**: Go to `http://localhost:4567` to view the application.
